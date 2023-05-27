@@ -36,9 +36,9 @@ const MainPage = () => {
 
   const handleScroll=()=>{
     console.log("caling")
-    setPage(page+1)
-    if (window.scrollY > (document.body.offsetHeight - 100)){
-      ;
+    
+    if (window.scrollY > (document.body.offsetHeight - 800)){
+      setPage(page+1);
       console.log("page valued change")
     }
   }
@@ -48,7 +48,7 @@ const MainPage = () => {
       <Header from={chatdata.from} to={chatdata.to} name={chatdata.name} className="mainHead"/>
       <div className="msgSec">
         {messages.map((item) => {
-          return <Cards mesg={item.message} image={item.sender.image} user={item.sender.self}/>;
+          return <Cards mesg={item.message} image={item.sender.image} user={item.sender.self} verified={item.sender.is_kyc_verified}/>;
         })}
       </div>
       <SendMsg/>
