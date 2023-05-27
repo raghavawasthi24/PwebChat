@@ -24,13 +24,14 @@ const MainPage = () => {
       setMessages(messageBox);
       setChatdata(resp.data);
     });
-    
+    // eslint-disable-next-line
   },[page]);
   
 
   useEffect(()=>{
     window.addEventListener("scroll", handleScroll);
     console.log("2 called")
+    // eslint-disable-next-line
   },[])
 
   const handleScroll=()=>{

@@ -10,7 +10,7 @@ const Header = (props) => {
         <p>{props.name}</p>
       </div>
       <div className='lowerHead'>
-        <img src='https://fastly.picsum.photos/id/551/160/160.jpg?hmac=DKAZaW3KPwMLhYwnJ-s_NOYKngMXo-nR1pEQzcNCgr0'/>
+        <img src='https://fastly.picsum.photos/id/551/160/160.jpg?hmac=DKAZaW3KPwMLhYwnJ-s_NOYKngMXo-nR1pEQzcNCgr0' alt='profile'/>
         <div className='travellDetail'>
             <p>From <span style={{fontWeight:"700"}}>{props.from}</span></p>
             <p>to <span style={{fontWeight:"700"}}>{props.to}</span></p>
